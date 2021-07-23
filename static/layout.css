@@ -146,6 +146,8 @@ body {
     font-size: 12px;
     text-align: right;
     line-height: 1.2;
+text-decoration:none;
+    color:black;
 }
 
 .profile-history {
