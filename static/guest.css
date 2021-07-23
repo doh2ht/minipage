@@ -1,0 +1,146 @@
+
+/*스크롤바*/
+::-webkit-scrollbar {
+	width: 15px;
+	background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #cdcdcd;	
+}
+
+::-webkit-scrollbar-button {
+  background-color: #cdcdcd ;
+  width: 5px;
+  height: 10px;
+}
+
+
+/*컨텐츠 외부*/
+.content {
+  display:flex;
+  flex-direction:column;
+  padding-bottom: 20px;
+  overflow: auto;
+  height:100%;
+}
+
+/*컨텐츠 내부*/
+.visitor-container { 
+  overflow: auto;
+  padding:0 10px 10px 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.visitor-name {
+  background-color: #eeeeee;
+  color:#adadad;
+  font-size:12px;
+  font-family: '모리스9';
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  border-top:1px #cdcdcd solid;
+  padding:0 20px 0 20px;
+}
+
+.visitor-name span {
+  font-size: 14px;
+}
+
+.blue {
+  color:#2a34b7;
+}
+
+.visitor-content {
+  display:flex;
+  align-items: center;
+}
+
+.minimi {
+  flex:0.5;
+  margin:15px;
+  background-size: contain;
+  height:80%;
+}
+
+.minimi img {
+  width:100%;
+}
+
+.minimi_1 {
+  background-image: url("./images/01.png");
+  flex:none; 
+  height:100%;
+}
+
+.minimi_2 {
+  background-image: url("./images/02.png");
+  flex:none; 
+  height:100%;
+}
+
+.minimi_3 {
+  background-image: url("./images/03.png");
+  flex:none;
+   height:100%;
+}
+
+.text {
+  padding:20px; 
+  flex:1;
+  line-height: 22px;
+}
+
+.comment {
+  margin: 15px 0 0 10px;
+  background-color: #f8f7f7; 
+  display: flex;
+  flex-direction: row;
+  padding:15px 5px 15px 15px;
+}
+
+.comment-left {
+  flex: 1; 
+  color:#adadad; 
+  background-color: white;  
+  border:1px #adadad solid;
+  height: 38px;
+}
+
+.comment-right {
+  flex: 0.1;
+  color:#adadad; 
+  margin:0 10px 0 10px;
+  background-color: white;  
+  font-size:14px; 
+  border:1px #adadad solid;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 39px;
+  font-family: '모리스9';
+} 
+
+/*메뉴*/
+.menu-container>a{
+    flex:0;
+    text-decoration: none; 
+    border: 1px solid #cdcdcd; 
+    border-left:none; 
+    padding:10px; 
+    margin-top:5px; 
+    background-color: #3395b0;
+    color:white;
+    align-items:center;
+    border-radius: 0 9px 9px 0;
+    text-align: center;
+
+}
+
+.menu-container>a:hover {
+    background-color: #28778c; 
+    border-left:white;
+}
+
+

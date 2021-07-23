@@ -1,0 +1,201 @@
+
+/*스크롤바*/
+::-webkit-scrollbar {
+	width: 15px;
+	background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #cdcdcd;	
+}
+
+::-webkit-scrollbar-button {
+  background-color: #cdcdcd ;
+  width: 5px;
+  height: 10px;
+}
+
+
+/*컨텐츠 외부*/
+.content {
+  display:flex;
+  flex-direction:column;
+  padding-bottom: 20px;
+  overflow: auto;
+  height:100%;
+}
+
+/*컨텐츠 내부*/
+.calender{
+  margin: 0 0 0 10px;
+  border: 1px #cdcdcd solid;
+  border-radius: 4px;
+  display:flex;
+  flex-direction: row;
+  padding:5px 5px 5px 15px;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.calender-left {
+  flex: 0.1; 
+  text-align: center;
+  color:#adadad; 
+  padding-top: 5px; 
+}
+
+.calender-left>span {
+  font-size: 20pt; 
+  font-weight: bold;
+  color:#3395b0;
+}
+
+.calender-right {
+  flex: 1;
+  line-height: 20px;
+  color:#adadad; 
+  display:flex;
+  flex-direction: column;
+  margin:0 10px 0 10px;
+} 
+
+.right-up {
+  border-bottom: 1px #eeeeee dashed; 
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  padding:5px 0 5px 0;
+}
+
+.right-up>div {
+  width:8%;
+  text-align: center; 
+  font-size: 14px;
+}
+
+.right-down {
+  margin-top:5px;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.right-down>div {
+  width:8%;
+  text-align: center; 
+  font-size: 14px;
+}
+
+.schedule {
+  margin: 0 0 0 10px;
+  line-height: 32px;  
+  color:#adadad;
+  font-size: 14px;
+}
+
+.diary-container { 
+    display:flex;
+    flex-direction:column;
+    overflow: auto;
+    padding:0 10px 10px 10px;
+}
+
+.diary-content {
+  flex:none; 
+  line-height:22px; 
+  margin-bottom:20px;
+  border:1px #cdcdcd solid;
+  border-radius: 4px;
+  display:flex;
+  flex-direction:column;
+  padding:20px;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.open {
+  color:#adadad;
+  border-top:1px #eeeeee dashed; 
+  border-bottom:1px #eeeeee solid;
+  line-height: 28px;
+  font-size:14px;
+}
+
+.sticker {
+  display:flex; 
+  justify-content: space-between;
+  line-height: 28px;
+  font-size:14px;
+  color:#adadad;
+}
+
+.orange { 
+  color:#ff8800;
+}
+
+.comment {
+  font-size:14px;
+  background-color: #eeeeee;
+  line-height: 32px;
+  display:flex;
+  align-items: center;
+  padding-left:5px;
+}
+
+.box {
+  width:91%; 
+  line-height: 20px; 
+  background-color:white;
+  margin-left:5px;
+  border:1px #cdcdcd solid;
+}
+
+.diary-main {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin: 20px;
+}
+
+.button>button {
+  width:40%; 
+  padding:16px;
+  color:white; 
+  background-color: white;
+  border:0px;
+  font-family: '모리스9';
+transition: 500ms ease all; 
+}
+
+.button>button:hover {
+  color:white; 
+  background-color: #adadad ;transition: 500ms ease all; border-radius: 4px;}
+
+/*메뉴*/
+.menu-container>a{
+    flex:0;
+    text-decoration: none; 
+    border: 1px solid #cdcdcd; 
+    border-left:none; 
+    padding:10px; 
+    margin-top:5px; 
+    background-color: #3395b0;
+    color:white;
+    align-items:center;
+    border-radius: 0 9px 9px 0;
+    text-align: center;
+
+}
+
+.menu-container>a:hover {
+    background-color: #28778c; 
+    border-left:white;
+}
+
+#secret-box {
+  display: none;
+}
