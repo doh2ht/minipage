@@ -1,6 +1,6 @@
 @font-face {
     font-family: '모리스9';
     font-style: normal;
-    src: url('./font/모리스9.ttf');
+    src:url('./font/morris9.woff') format('woff'), url('./font/모리스9.ttf') format('truetype')
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
